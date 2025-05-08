@@ -74,7 +74,9 @@ with tab1:
                   
 
 with tab2:
-   st.pyplot(fig2)
+   st.subheader("Graph 2: Screen Time by Age Group")
+   fig = Graph2.makeGraph2()
+   st.plotly_chart(fig, use_container_width=True)
 
 with tab3:
    st.pyplot(fig3)
@@ -87,4 +89,3 @@ with tab4:
 with tab5:
    st.pyplot(fig5_1)
    st.pyplot(fig5_2)
-

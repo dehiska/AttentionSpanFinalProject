@@ -16,15 +16,15 @@ df1['Age Group'] = pd.Categorical(df1['Age Group'], categories=age_group_order, 
 grouped = df1.groupby(['Age Group', 'Average Screen Time'], observed=False).size().reset_index(name='Count')
 pivot_df = grouped.pivot(index='Age Group', columns='Average Screen Time', values='Count').fillna(0)
 
+import plotly.graph_objects as go
+
 def makeGraph2():
-    fig, ax = plt.subplots(figsize=(10, 6))
-    for age_group in age_group_order:
-        ax.plot(screen_time_order, pivot_df.loc[age_group], marker='o', label=age_group)
-    ax.set_xlabel('Average Screen Time (hours)')
-    ax.set_ylabel('Number of Respondents')
-    ax.set_title('Screen Time Distribution by Age Group')
-    ax.legend(title='Age Group')
-    ax.grid(True)
-    ax.set_xticks(range(len(screen_time_order)))
-    ax.set_xticklabels(screen_time_order, rotation=45)
+    fig = go.Figure(data=go.Heatmap(
+        z=pivot_df.values,
+        x=pivot_df.columns,
+        y=pivot_df.index,
+        colorscale='Viridis'))
+    fig.update_layout(title="Heatmap of Respondents",
+                      xaxis_title="Screen Time", 
+                      yaxis_title="Age Group")
     return fig
