@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import Graph1, Graph2, Graph3, Graph4, Graph5
 url1 = 'data.csv'
 df1 = pd.read_csv(url1)
