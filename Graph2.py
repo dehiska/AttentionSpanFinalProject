@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.graph_objects as go
 
 url1 = 'data.csv'
 df1 = pd.read_csv(url1)
@@ -16,14 +17,14 @@ df1['Age Group'] = pd.Categorical(df1['Age Group'], categories=age_group_order, 
 grouped = df1.groupby(['Age Group', 'Average Screen Time'], observed=False).size().reset_index(name='Count')
 pivot_df = grouped.pivot(index='Age Group', columns='Average Screen Time', values='Count').fillna(0)
 
-import plotly.graph_objects as go
+
 
 def makeGraph2():
     fig = go.Figure(data=go.Heatmap(
         z=pivot_df.values,
         x=pivot_df.columns,
         y=pivot_df.index,
-        colorscale='Viridis'))
+        colorscale='YlOrRd'))  # Yellow to Red
     fig.update_layout(title="Heatmap of Respondents",
                       xaxis_title="Screen Time", 
                       yaxis_title="Age Group")
