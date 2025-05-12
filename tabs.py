@@ -90,9 +90,9 @@ with tab4:
 
 
 with tab5:
-   st.pyplot(fig5_1)
+    st.pyplot(fig5_1)
 
     st.text("A majority—61.5%—of respondents don’t use productivity apps, while only 38.5% do. This suggests that most people either aren’t aware of or don’t feel the need for digital tools to manage time and tasks, despite high screen usage and attention issues. It raises questions about whether people are choosing convenience over intentional focus.")
-   st.pyplot(fig5_2)
+    st.pyplot(fig5_2)
 
     st.text("Productivity app usage varies widely by age. Those aged 25–34 and below 18 show higher usage, while older age groups, especially 45 and above, are the least engaged. Even among young people, non-use often outweighs use, indicating that productivity tools are still not the norm across any age group.")
