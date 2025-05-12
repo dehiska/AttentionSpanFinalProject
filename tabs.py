@@ -70,22 +70,33 @@ with tab1:
 
         elif purpose == 'Both' and time == 'Weekends':
             st.pyplot(Graph1.makeGraph1_9())
+        
+        st.text("Depends on what variables you choose from, the graph changes.From ages 5 to 15, both educational and recreational screen time increase—but recreational use grows much faster. By age 15, teens average over 5 hours of recreational screen time compared to just 2 for education. This widening gap suggests that as kids grow, screen time becomes more about entertainment than learning, potentially impacting focus and productivity.")
 
-                  
 
 with tab2:
    st.subheader("Graph 2: Screen Time by Age Group")
    fig = Graph2.makeGraph2()
    st.pyplot(fig)
+
     
+    st.text("This graph shows that young adults (18–24) have the highest screen time, with their usage peaking at 6–8 hours per day. In contrast, other age groups have significantly lower screen time, especially those 35 and older. This suggests that young adults are the most digitally engaged, likely due to a mix of school, work, and social media usage.")
+
 with tab3:
    st.pyplot(fig3)
 
+    st.text("Children under 18 actually have a longer average attention span (around 47 minutes) than adults, who average about 35 minutes. This may be due to adults being more mentally overstimulated or more easily distracted by digital notifications and multitasking. It challenges the assumption that maturity always brings better focus.It could also point to differences in learning environments, screen habits, or lifestyle distractions between the two groups.")
 
 with tab4:
    st.pyplot(fig4)
 
+    st.text("This box plot shows that the 18–24 age group not only has the highest median screen time but also the widest range, meaning they vary greatly in how distracted they get by notifications. Younger groups (Below 18) and older adults (45+) show more consistent but lower distraction levels. This reinforces the idea that digital distraction hits young adults the hardest, likely due to constant app engagement.")
+
 
 with tab5:
    st.pyplot(fig5_1)
+
+    st.text("A majority—61.5%—of respondents don’t use productivity apps, while only 38.5% do. This suggests that most people either aren’t aware of or don’t feel the need for digital tools to manage time and tasks, despite high screen usage and attention issues. It raises questions about whether people are choosing convenience over intentional focus.")
    st.pyplot(fig5_2)
+
+    st.text("Productivity app usage varies widely by age. Those aged 25–34 and below 18 show higher usage, while older age groups, especially 45 and above, are the least engaged. Even among young people, non-use often outweighs use, indicating that productivity tools are still not the norm across any age group.")
