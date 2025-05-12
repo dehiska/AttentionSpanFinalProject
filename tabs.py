@@ -71,7 +71,7 @@ with tab1:
         elif purpose == 'Both' and time == 'Weekends':
             st.pyplot(Graph1.makeGraph1_9())
         
-        st.text("Depends on what variables you choose from, the graph changes.From ages 5 to 15, both educational and recreational screen time increase—but recreational use grows much faster. By age 15, teens average over 5 hours of recreational screen time compared to just 2 for education. This widening gap suggests that as kids grow, screen time becomes more about entertainment than learning, potentially impacting focus and productivity.")
+        st.text("Depends on what variables you choose from, the graph changes. From ages 5 to 15, both educational and recreational screen time increase—but recreational use grows much faster. By age 15, teens average over 5 hours of recreational screen time compared to just 2 for education. This widening gap suggests that as kids grow, screen time becomes more about entertainment than learning, potentially impacting focus and productivity.")
 
 
 with tab2:
