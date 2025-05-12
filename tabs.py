@@ -75,21 +75,17 @@ with tab1:
 
 
 with tab2:
-   st.subheader("Graph 2: Screen Time by Age Group")
-   fig = Graph2.makeGraph2()
-   st.pyplot(fig)
-
-    
+    st.subheader("Graph 2: Screen Time by Age Group")
+    fig = Graph2.makeGraph2()
+    st.pyplot(fig)
     st.text("This graph shows that young adults (18–24) have the highest screen time, with their usage peaking at 6–8 hours per day. In contrast, other age groups have significantly lower screen time, especially those 35 and older. This suggests that young adults are the most digitally engaged, likely due to a mix of school, work, and social media usage.")
 
 with tab3:
-   st.pyplot(fig3)
-
+    st.pyplot(fig3)
     st.text("Children under 18 actually have a longer average attention span (around 47 minutes) than adults, who average about 35 minutes. This may be due to adults being more mentally overstimulated or more easily distracted by digital notifications and multitasking. It challenges the assumption that maturity always brings better focus.It could also point to differences in learning environments, screen habits, or lifestyle distractions between the two groups.")
 
 with tab4:
-   st.pyplot(fig4)
-
+    st.pyplot(fig4)
     st.text("This box plot shows that the 18–24 age group not only has the highest median screen time but also the widest range, meaning they vary greatly in how distracted they get by notifications. Younger groups (Below 18) and older adults (45+) show more consistent but lower distraction levels. This reinforces the idea that digital distraction hits young adults the hardest, likely due to constant app engagement.")
 
 
